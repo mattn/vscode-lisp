@@ -1,0 +1,11 @@
+--- "syntaxes/Lisp.tmLanguage.orig"	2016-07-12 10:47:50.452727500 +0900
++++ "syntaxes/Lisp.tmLanguage"	2016-07-12 10:47:55.319700700 +0900
+@@ -110,7 +110,7 @@
+ 			<key>match</key>
+ 			<string>\b(?i:cons|car|cdr|cond|lambda|format|setq|setf|quote|eval|append|list|listp|memberp|t|load|progn)\b</string>
+ 			<key>name</key>
+-			<string>support.function.lisp</string>
++			<string>keyword.function.lisp</string>
+ 		</dict>
+ 		<dict>
+ 			<key>match</key>

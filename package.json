@@ -1,0 +1,18 @@
+{
+  "name": "lisp",
+  "version": "0.0.1",
+  "publisher": "mattn",
+  "engines": { "vscode": "*" },
+  "contributes": {
+    "languages": [{
+      "id": "lisp",
+      "aliases": ["Lisp", "lisp"],
+      "extensions": [".lisp"]
+    }],
+    "grammars": [{
+      "language": "lisp",
+      "scopeName": "source.lisp",
+      "path": "./syntaxes/Lisp.tmLanguage"
+    }]
+  }
+}
