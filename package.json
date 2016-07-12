@@ -1,9 +1,10 @@
 {
   "name": "Lisp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "mattn",
   "engines": { "vscode": "*" },
   "description": "Lisp syntax highlight",
+  "categories": ["Languages"],
   "license": "MIT",
   "repository": {
     "type": "git",
