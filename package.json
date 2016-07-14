@@ -2,7 +2,9 @@
   "name": "Lisp",
   "version": "0.0.5",
   "publisher": "mattn",
-  "engines": { "vscode": "*" },
+  "engines": {
+    "vscode": "^0.10.10"
+  },
   "description": "Lisp syntax highlight",
   "categories": ["Languages"],
   "license": "MIT",
