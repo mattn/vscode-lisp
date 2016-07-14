@@ -1,11 +1,12 @@
 {
   "name": "Lisp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "mattn",
   "engines": { "vscode": "*" },
   "description": "Lisp syntax highlight",
   "categories": ["Languages"],
   "license": "MIT",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/mattn/vscode-lisp"
