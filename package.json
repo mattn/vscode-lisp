@@ -1,6 +1,6 @@
 {
   "name": "Lisp",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "mattn",
   "engines": {
     "vscode": "^0.10.10"
