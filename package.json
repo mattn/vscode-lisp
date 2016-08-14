@@ -1,6 +1,6 @@
 {
-  "name": "Lisp",
-  "version": "0.1.0",
+  "name": "lisp",
+  "version": "0.1.1",
   "publisher": "mattn",
   "description": "Lisp syntax highlight",
   "author": {
