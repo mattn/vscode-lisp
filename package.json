@@ -1,17 +1,25 @@
 {
   "name": "Lisp",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "mattn",
-  "engines": {
-    "vscode": "^0.10.10"
-  },
   "description": "Lisp syntax highlight",
+  "author": {
+    "name": "Yasuhiro Matsumoto (a.k.a mattn)"
+  },
   "categories": ["Languages"],
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/mattn/vscode-lisp"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^1.6.2",
+    "vscode": "0.10.x"
+  },
+  "engines": {
+    "vscode": "^0.10.10"
   },
   "contributes": {
     "languages": [{
