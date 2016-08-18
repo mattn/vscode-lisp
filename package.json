@@ -6,6 +6,7 @@
   "author": {
     "name": "Yasuhiro Matsumoto (a.k.a mattn)"
   },
+  "icon": "images/lisp.png",
   "categories": ["Languages"],
   "license": "MIT",
   "private": true,
