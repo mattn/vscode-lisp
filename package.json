@@ -1,6 +1,6 @@
 {
   "name": "Lisp",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "publisher": "mattn",
   "description": "Lisp syntax highlight",
   "author": {
@@ -26,7 +26,7 @@
     "languages": [{
       "id": "lisp",
       "aliases": ["Lisp", "lisp"],
-      "extensions": [".lisp", ".cl"],
+      "extensions": [".lisp", ".cl", ".asd"],
       "configuration": "./Lisp.configuration.json"
     }],
     "grammars": [{
