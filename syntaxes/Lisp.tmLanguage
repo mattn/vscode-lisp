@@ -90,6 +90,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>(?<=\s|[()]):(\w|[+\-<>/*&amp;=.?!$%:@\[\]^{}~#|])*</string>
+			<key>name</key>
+			<string>keyword.constant.lisp</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\b(?i:case|do|let|loop|if|else|when)\b</string>
 			<key>name</key>
 			<string>keyword.control.lisp</string>
