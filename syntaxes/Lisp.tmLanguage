@@ -39,21 +39,55 @@
 		<dict>
 			<key>captures</key>
 			<dict>
-				<key>2</key>
+				<key>1</key>
 				<dict>
 					<key>name</key>
 					<string>storage.type.function-type.lisp</string>
 				</dict>
-				<key>4</key>
+				<key>2</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.function.lisp</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\b(?i:(defun|defmethod|defmacro))\b)(\s+)((\w|\-|\!|\?)*)</string>
+			<string>(?:\()((?i:defgeneric|define-compiler-macro|define-method-combination|define-modify-macro|define-setf-expander|defmacro|defmethod|defsetf|defun||define-\S+))\s+((?:\w|[+\-<>/*&amp;=.?!$%:@\[\]^{}~#|])+)</string>
 			<key>name</key>
 			<string>meta.function.lisp</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.function-type.lisp</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.lisp</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?:\()((?i:deftype|defstruct|define-condition|defpackage|defclass))\s+((?:\w|[+\-<>/*&amp;=.?!$%:@\[\]^{}~#|])+)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.function-type.lisp</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.variable.lisp</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?:\()((?i:defvar|defconstant|defparameter|define-symbol-macro))\s+((?:\w|[+\-<>/*&amp;=.?!$%:@\[\]^{}~#|])+)</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -84,39 +118,27 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\*)(\S*)(\*)</string>
+			<string>(?<=^|\s|[()])(\*)(\S*)(\*)(?=$|\s|[()])</string>
 			<key>name</key>
 			<string>variable.other.global.lisp</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?<=\s|[()]):(\w|[+\-<>/*&amp;=.?!$%:@\[\]^{}~#|])*</string>
+			<string>(?<=^|\s|[()]):(\w|[+\-<>/*&amp;=.?!$%:@\[\]^{}~#|])*</string>
 			<key>name</key>
 			<string>keyword.constant.lisp</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:case|do|let|loop|if|else|when)\b</string>
+			<string>(?<=\()(?i:block|case|ccase|ecase|typecase|etypecase|ctypecase|catch|cond|destructuring-bind|do|do*|dolist|dotimes|eval-when|flet|labels|macrolet|generic-flet|generic-labels|handler-case|restart-case|if|lambda|let|let*|handler-bind|restart-bind|locally|multiple-value-bind|multiple-value-call|multiple-value-prog1|prog|prog*|prog1|prog2|progn|progv|return|return-from|symbol-macrolet|tagbody|throw|unless|unwind-protect|when|with-accessors|with-condition-restarts|with-open-file|with-output-to-string|with-slots|with-standard-io-syntax|loop|declare|declaim|proclaim|setq|setf|quote|with-\S+)(?=\s+)</string>
 			<key>name</key>
 			<string>keyword.control.lisp</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(?i:eq|neq|and|or)\b</string>
-			<key>name</key>
-			<string>keyword.operator.lisp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(?i:null|nil)\b</string>
+			<string>(?<=^|\s|[()])(?i:nil|t)(?=$|\s|[()])</string>
 			<key>name</key>
 			<string>constant.language.lisp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>\b(?i:cons|car|cdr|cond|lambda|format|setq|setf|quote|eval|append|list|listp|memberp|t|load|progn)\b</string>
-			<key>name</key>
-			<string>keyword.function.lisp</string>
 		</dict>
 		<dict>
 			<key>match</key>
