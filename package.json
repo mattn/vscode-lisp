@@ -26,7 +26,7 @@
     "languages": [{
       "id": "lisp",
       "aliases": ["Lisp", "lisp"],
-      "extensions": [".lisp", ".cl", ".asd", ".ros", ".lsp"],
+      "extensions": [".lisp", ".cl", ".asd", ".ros", ".lsp", ".el"],
       "configuration": "./Lisp.configuration.json"
     }],
     "grammars": [{
