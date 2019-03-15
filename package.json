@@ -33,6 +33,15 @@
       "language": "lisp",
       "scopeName": "source.lisp",
       "path": "./syntaxes/Lisp.tmLanguage"
+    },{
+      "scopeName": "markdown.lisp.codeblock",
+      "path": "./syntaxes/codeblock.json",
+      "injectTo": [
+        "text.html.markdown"
+      ],
+      "embeddedLanguages": {
+        "meta.embedded.block.superjs": "lisp"
+      }
     }]
   },
   "readmeFilename": "README.md",
