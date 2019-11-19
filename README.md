@@ -1,6 +1,9 @@
 # vscode-lisp
 
-Lisp syntax for vscode
+
+[![MarketPlace Tag](https://vsmarketplacebadge.apphb.com/version-short/mattn.Lisp.svg)](https://marketplace.visualstudio.com/items?itemName=mattn.Lisp)
+
+> Lisp syntax for vscode
 
 ## License
 
