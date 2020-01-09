@@ -17,7 +17,7 @@
   "dependencies": {},
   "devDependencies": {
     "typescript": "3.7.4",
-    "vscode": "0.11.18"
+    "vscode": "1.1.36"
   },
   "engines": {
     "vscode": "^0.10.10"
